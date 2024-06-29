@@ -1,3 +1,90 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+/*||RESET*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+/*||RESET*/
+*,
+*::after,
+*::before{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box}
+
+    img{
+        display:block;
+        max-width:100%;
+        height:auto;
+        margin: 0 auto;
+        border-radius:var(--BORDER-RADIUS);
+    }
+
+    
+/*||VARIABLES*/
+:root{
+    /*FONTS*/
+    --FF:"Specimen", Outfit;
+    --FSP:15px;
+
+    /*COLORS*/
+    --BGCOLOR: hsl(212, 45%, 89%);
+    --BODYCOLOR:hsl(0, 0%, 100%);
+   
+
+    /*STANDARD PADDING*/
+    --PADDING-TB:0.5em;
+    /*BORDER*/
+   --BORDER:1px solid;
+   --BORDER-RADIUS:15px;
+   
+    
+}
+    
+/*||UTLITIES*/
+
+.offscreen{
+    position:absolute;
+    left:-1000px;
+}
+
+.wrap{
+    white-space:wrap;
+}
+.center{
+    text-align:center;
+}
+
+html{
+    
+    font-family:var(--FF);
+   
+}
+
+
+
+.main{
+    min-height:100vh;
+    background-color:var(--BGCOLOR);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--BODYCOLOR);
+    width:400px;
+    height:600px;
+    padding:var(--PADDING-TB);
+    border:var(--BORDER);
+    border-radius:var(--BORDER-RADIUS);
+    gap:2rem;
+
+}
+p{
+    font-size: var(--FSP);
+}
