@@ -82,7 +82,7 @@ body{
     flex-direction: column;
     gap:2rem;
     background-color: var(--BODYCOLOR);
-    max-width:320px;
+    width:44%;
     padding:var(--PADDING-TB);
     border:var(--BORDER) var(--BORDER);
     border-radius:var(--BORDER-RADIUS) ;
@@ -104,6 +104,6 @@ h1{
 p{
     line-height: 1.3;
     font-size: var(--FSP);
-    margin: 1.07em;
+    margin: 1em;
     color:var(--FC)
 }
